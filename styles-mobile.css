@@ -230,8 +230,13 @@
     transform: translateX(-100px);
   }
 
+  #product-slider-mobile.swiper-container {
+    width: 100vw;
+  }
+
   #product-container-mobile .swiper-wrapper {
     display: flex;
+    width: 100vw;
   }
 
   .product-mobile {

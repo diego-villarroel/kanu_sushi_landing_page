@@ -30,8 +30,6 @@ function setupSliders () {
       autoplay: {
           delay: 5000,
       },
-      width: 100vw,
-      height: 100vh,
   });
 
   productMobileSlider.autoplay.start();
