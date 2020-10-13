@@ -1,0 +1,872 @@
+:root {
+  --socialesBar: 90px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Utils */
+.full-viewport {
+  display: inline-flex;
+  float: left;
+  height: 100vh;
+  width: 100vw;
+}
+
+.kanu-cta {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.kanu-cta:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+}
+
+.cta-one:hover {
+  color: #ffffff;
+  background: #003b4a;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.mobile-hide {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Main Section */
+.main-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#header-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#header-slider .swiper-wrapper {
+  display: flex;
+  width: (3 * 100) vw; /* Amount of slides * 100 */
+}
+
+#header-slider .swiper-slide {
+  background-size: cover;
+}
+
+#mainSlide-1 {
+  background-image: url(../images/main-slider/1.jpg);
+}
+
+#mainSlide-2 {
+  background-image: url(../images/main-slider/2.jpg);
+}
+
+#mainSlide-3 {
+  background-image: url(../images/main-slider/3.jpg);
+}
+
+/* Header box */
+.logo-block {
+  position: absolute;
+  background: rgba(28, 28, 27, 0.6);
+  padding-top: 8vh;
+  padding-left: 10vw;
+  height: 100vh;
+  width: 34vw;
+  left: 0;
+  top: 0;
+}
+
+.logo-block > * {
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 14vw;
+}
+
+.linea {
+  border-left: 2px #cdcece solid;
+  height: 30vh;
+}
+
+.slogan {
+  color: #cdcece;
+  letter-spacing: 10pt;
+  text-transform: uppercase;
+  font-size: 13pt;
+}
+
+.slogan span {
+  margin-bottom: 20px;
+}
+
+.slogan span:nth-child(2) {
+  font-weight: 900;
+}
+
+.logo-block a {
+  color: #cdcece;
+  border: 1px #cdcece solid;
+  display: block;
+  height: 50px;
+  line-height: 45px;
+  width: 20vw;
+  text-align: center;
+}
+
+/* Socials */
+.sociales {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 16px;
+  top: 0;
+  width: var(--socialesBar);
+  z-index: 50;
+}
+
+.sociales > * {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sociales a img {
+  display: inline;
+
+}
+
+.facebook {
+  padding: 15px;
+}
+
+/*cta-pedido- first*/
+.cta-pedidos {
+  background: rgb(28, 28, 27);
+  display: flex;
+  justify-content: center;
+  width: var(--socialesBar);
+  height: var(--socialesBar);
+  align-items: center;
+}
+
+.cta-pedidos img {
+  width: 35px;
+  margin-bottom: 15px;
+}
+
+.cta-pedidos span {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* Menu */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 30px;
+  right: 10vw;
+}
+
+.menu-container a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-left: 3vw;
+  transition: all 0.5s;
+}
+
+.menu-container a:hover {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+/* Section: About us */
+.about-container {
+  background: #1a1a1a;
+  position: relative;
+  z-index: -1;
+}
+
+.titulo-about-us {
+  position: relative;
+  left: 60vw;
+  letter-spacing: 20px;
+  font-style: italic;
+  font-weight: 500;
+  color: white;
+  font-size: 33pt;
+  text-align: left;
+  margin-top: 45vh;
+}
+
+.subtitle {
+  color: #cdcece;
+  font-size: 17pt;
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  left: 23vw;
+  top: 20vh;
+  letter-spacing: 14pt;
+}
+
+.more {
+  font-weight: 400;
+}
+
+.about-us-text {
+  color: #cdcece;
+  font-size: 16pt;
+  font-weight: 350;
+  line-height: 20pt;
+  position: relative;
+  top: 47vh;
+  right: 2vw;
+}
+
+/* 1er separador */
+
+#first-separator {
+  background: url(../images/photos/Destacado.jpg);
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+}
+
+/* Section: Products */
+#products {
+  background: rgb(255, 254, 254);
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+#product-slider {
+  width: 100vw;
+}
+
+#products a {
+  align-self: center;
+  font-weight: 500;
+  text-align: justify;
+  text-transform: uppercase;
+  background-color: #000000;
+}
+
+#product-slider.swiper-container {
+  flex-direction: column;
+  position: relative;
+}
+
+#product-slider .swiper-wrapper {
+  display: flex;
+}
+
+.product.swiper-slide {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product img {
+  width: 50vw;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.product img:hover {
+  opacity: .6;
+}
+
+.product span {
+  font-family: "Source Sans Pro", monospace;
+  color: #ffffff;
+  font-size: 18pt;
+  font-weight: 600;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 12pt;
+  text-transform: uppercase;
+  position: absolute;
+  margin-left: 15vw;
+}
+
+.product p {
+  font-family: "Source Sans Pro", monospace;
+  color: #ffffff;
+  font-size: 10pt;
+  font-weight: 600;
+  width: 15vw;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2pt;
+  position: absolute;
+  margin-top: 11vh;
+  margin-left: 15vw;
+  opacity: 0;
+  transition: .2s;
+  z-index: 100;
+}
+
+#kanu-font {
+  font-family: "Source Sans Pro", monospace;
+  font-size: 12pt;
+  font-weight: 100;
+}
+
+#kanu-font:hover {
+  background-color: inherit;
+}
+
+/* Section: Franquicias */
+.franquicias {
+  background: #cdcece;
+  position: relative;
+  height: auto;
+  z-index: 5;
+}
+
+#franquicias {
+  height: 101vh;
+}
+
+.franquicias h2 {
+  color: #535456;
+  font-style: italic;
+  font-size: 35pt;
+  letter-spacing: 15pt;
+  position: absolute;
+  top: 32vh;
+  left: 35vw;
+}
+
+.franquicias p {
+  color: #535456;
+  font-size: 15pt;
+  font-weight: 400;
+  line-height: 15pt;
+  width: 32vw;
+  position: absolute;
+  top: 42vh;
+  left: 35vw;
+}
+
+.franquicias a {
+  color: black;
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5pt;
+  position: absolute;
+  bottom: 20vh;
+  left: 35vw;
+}
+
+/* Section: Eventos */
+#eventos {
+  background: url(../images/photos/Eventos.jpg);
+  position: relative;
+  background-size: cover;
+  z-index: -1;
+}
+
+.eventos h2 {
+  color: #cdcece;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 35pt;
+  letter-spacing: 15pt;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+.eventos span {
+  color: #fefefe;
+  font-size: 13pt;
+  width: 30vw;
+  line-height: 25pt;
+  position: absolute;
+  top: 48vh;
+  left: 10vw;
+}
+
+.eventos a {
+  color: #fefefe;
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5pt;
+  position: absolute;
+  bottom: 23vh;
+  left: 10vw;
+}
+
+/*Section: Contact */
+.contact {
+  background: #003b4a;
+  color: #cdcece;
+  position: relative;
+  background-image: url('../images/lines-k.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: -1;
+
+}
+
+.contact h3 {
+  font-weight: 400;
+  letter-spacing: 16pt;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.contact form {
+  position: absolute;
+  top: 150px;
+  left: 498px;
+  width: 36vw;
+}
+
+#emailForm input,
+#emailForm textarea,
+#emailForm select,
+#emailForm input::placeholder {
+  color: #FFF;
+}
+
+#emailForm select option {
+  color: #003b4a;
+}
+
+#emailForm input,
+#emailForm select,
+#emailForm textarea {
+  background: transparent;
+  border: white thin solid;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  outline: 0;
+  padding: 10px;
+}
+
+#emailForm input::placeholder,
+#emailForm select,
+#emailForm textarea {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 4px;
+}
+
+#emailForm button {
+  align-self: flex-end;
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  outline: 0;
+  transition: all 0.5s;
+  width: auto;
+}
+
+#emailForm button:hover {
+  transform: translateX(5px);
+}
+
+/* Section: Sucursales */
+#sucursales-container {
+  align-items:center ;
+  position: relative;
+  background: #1a1a1a;
+  color: #7c7c7c;
+  display: flex;
+  flex-direction: column;
+}
+
+#sucursales-container h2 {
+  font-size: 40pt;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-top: 20vh;
+}
+
+#sucursales h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 15pt;
+  margin-bottom: 10px;
+}
+
+.slide-content {
+  display: block;
+  flex-direction: column;
+
+}
+
+.slide-content article {
+  margin-top: 5vh;
+}
+
+.slide-content span {
+  line-height: 25pt;
+  letter-spacing: 1pt;
+}
+
+/*SLIDER EN CSS*/
+#slider {
+   margin: 0 auto;
+   width: 800px;
+   max-width: 100%;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   height: 300px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+#controls {
+   margin: -180px 0 0 0;
+   width: 100%;
+   height: 50px;
+   z-index: 3;
+   position: relative;
+}
+#controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 50px;
+   height: 50px;
+   opacity: .4;
+}
+#controls label:hover {
+   opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(2) {
+   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   float:right;
+   margin: 0 -50px 0 0;
+   display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(2) {
+   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   float:left;
+   margin: 0 0 0 -50px;
+   display: block;
+}
+/*TERMINA SLIDER CSS*/
+
+
+/* Footer */
+
+footer {
+  align-items: center;
+  background: #003b4a;
+  color: #cdcece;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  height: 23vh;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.footer-init {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vh;
+}
+
+.footer-init h3 {
+  text-transform: uppercase;
+  padding-right: 9vw;
+  padding-bottom: 1vh;
+  font-size: 14pt;
+  letter-spacing: 3pt;
+  color: #2c7081;
+}
+
+.footer-init h4 {
+  font-size: 14pt;
+  letter-spacing: 3pt;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer hr {
+  width: 100vw;
+  color: #2c7081;
+}
+
+@media (max-width: 1500px) {
+  /* Section: Franquicias */
+  .franquicias h2 {
+    top: 30vh;
+    left: 33vw;
+  }
+
+  .franquicias p {
+    width: 35vw;
+    top: 40vh;
+    left: 33vw;
+  }
+
+  .franquicias a {
+    bottom: 36vh;
+    left: 33vw;
+  }
+
+  /* Section: Eventos */
+  .eventos a {
+    bottom: 33vh;
+  }
+
+  /*Section: Contact */
+  .contact h3 {
+    top: 13vh;
+    left: 30.5vw;
+  }
+
+  .contact form {
+    top: 23vh;
+    left: 32vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  /* Section: About us */
+  .titulo-about-us {
+    left: 60vw;
+  }
+
+  .subtitle {
+    left: 17vw;
+  }
+
+  .about-us-text {
+    right: 7vw;
+  }
+
+  /* Section: Franquicias */
+  .franquicias h2 {
+    top: 28vh;
+    left: 28vw;
+  }
+
+  .franquicias p {
+    width: 40vw;
+    top: 37vh;
+    left: 28vw;
+  }
+
+  .franquicias a {
+    bottom: 35vh;
+    left: 28vw;
+  }
+
+  /* Section: Eventos */
+  .eventos span {
+    top: 45vh;
+  }
+
+  .eventos a {
+    bottom: 29vh;
+  }
+
+  /*Section: Contact */
+  .contact h3 {
+    top: 13vh;
+    left: 28vw;
+  }
+
+  .contact form {
+    top: 23vh;
+    left: 32vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* Menu */
+  .menu-container {
+    right: 12vw;
+  }
+
+  .menu-container a {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-left: 2vw;
+  }
+
+  /* Section: About us */
+  .titulo-about-us {
+    left: 60vw;
+    font-weight: 500;
+    font-size: 35pt;
+    margin-top: 45vh;
+  }
+
+  .subtitle {
+    position: absolute;
+    left: 20vw;
+    font-size: 12pt;
+    font-weight: 600;
+    top: 25vh;
+    letter-spacing: 10pt;
+  }
+
+  .about-us-text {
+    font-size: 13pt;
+    font-weight: 350;
+    line-height: 20pt;
+    top: 47vh;
+    right: 18vw;
+  }
+
+  /* Section: Franquicias */
+  .franquicias h2 {
+    font-size: 33pt;
+    letter-spacing: 12pt;
+    top: 25vh;
+    left: 28vw;
+  }
+
+  .franquicias p {
+    font-size: 14pt;
+    font-weight: 400;
+    line-height: 15pt;
+    letter-spacing: 1pt;
+    width: 47vw;
+    top: 35vh;
+    left: 28vw;
+  }
+
+  .franquicias a {
+    bottom: 37vh;
+    left: 28vw;
+  }
+
+  /* Section: Eventos */
+  .eventos h2 {
+    font-size: 32pt;
+    top: 27vh;
+    left: 10vw;
+  }
+
+  .eventos span {
+    font-size: 13pt;
+    width: 33vw;
+    line-height: 22pt;
+    top: 43vh;
+  }
+
+  .eventos a {
+    bottom: 33vh;
+  }
+
+  /*Section: Contact */
+  .contact h3 {
+    font-weight: 400;
+    letter-spacing: 10pt;
+    top: 13vh;
+    left: 27vw;
+  }
+
+  .contact form {
+    top: 25vh;
+    left: 30vw;
+  }
+}
