@@ -464,8 +464,7 @@ button {
   background-image: url('../images/lines-k.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  z-index: -1;
-
+  z-index: 0;
 }
 
 .contact h3 {
@@ -655,7 +654,7 @@ footer {
   display: flex;
   float: left;
   flex-direction: column;
-  height: 23vh;
+  height: 30vh;
   justify-content: center;
   position: relative;
   width: 100vw;
@@ -682,14 +681,23 @@ footer {
   letter-spacing: 3pt;
 }
 
+.footer-end {
+  height: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-end hr {
+  width: 100vw;
+  border: .5px solid;
+  border-color: #025469;
+}
+
 footer h6 {
   font-size: 12px;
   font-weight: 400;
-}
-
-footer hr {
-  width: 100vw;
-  color: #2c7081;
+  padding-top: 6px;
+  text-align: center;
 }
 
 @media (max-width: 1500px) {
@@ -706,13 +714,13 @@ footer hr {
   }
 
   .franquicias a {
-    bottom: 36vh;
+    bottom: 33vh;
     left: 33vw;
   }
 
   /* Section: Eventos */
   .eventos a {
-    bottom: 33vh;
+    bottom: 18vh;
   }
 
   /*Section: Contact */
@@ -764,7 +772,7 @@ footer hr {
   }
 
   .eventos a {
-    bottom: 29vh;
+    bottom: 23vh;
   }
 
   /*Section: Contact */
@@ -782,7 +790,7 @@ footer hr {
 @media (max-width: 1100px) {
   /* Menu */
   .menu-container {
-    right: 12vw;
+    right: 14vw;
   }
 
   .menu-container a {
@@ -835,38 +843,59 @@ footer hr {
   }
 
   .franquicias a {
-    bottom: 37vh;
+    bottom: 22vh;
     left: 28vw;
   }
 
   /* Section: Eventos */
   .eventos h2 {
     font-size: 32pt;
-    top: 27vh;
+    top: 12vh;
     left: 10vw;
   }
 
   .eventos span {
     font-size: 13pt;
-    width: 33vw;
-    line-height: 22pt;
-    top: 43vh;
+    width: 45vw;
+    line-height: 18pt;
+    letter-spacing: 1pt;
+    top: 36vh;
   }
 
   .eventos a {
-    bottom: 33vh;
+    bottom: 20vh;
   }
 
   /*Section: Contact */
+  .contact {
+    background-size: 50%;
+  }
+
   .contact h3 {
     font-weight: 400;
     letter-spacing: 10pt;
-    top: 13vh;
+    top: 4vh;
     left: 27vw;
   }
 
   .contact form {
-    top: 25vh;
-    left: 30vw;
+    top: 12vh;
+    width: 70vw;
+    left: 13vw;
+    height: 65vh;
+  }
+
+  /*Section: Sucursales*/
+
+  #sucursales-container h2 {
+    font-size: 40pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-top: 10vh;
+  }
+
+  footer {
+    height: 40vh;
   }
 }
