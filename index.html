@@ -9,8 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/styles-mobile.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -63,7 +62,7 @@
     <section class="about-container full-viewport" id="about-us">
       <div class="subtitle">
         <span class="less">WHERE MODERN</span>
-        <span class="more">- MEET CLASSIC</span>
+        <span class="more">MEETS CLASSIC</span>
       </div>
       <div class="titulo-about-us-container">
         <h1 class="titulo-about-us" data-aos="fade-left" data-aos-easing="cubic-bezier(0.37, 0, 0.63, 1)"
@@ -77,49 +76,59 @@
       <div id="product-slider" class="swiper-container">
         <div class="swiper-wrapper">
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Ceviche.jpg" alt=""></a>
+            <a href="#"><img src="images/photos/desk-Ceviche.png" alt=""></a>
             <span>Ceviche>></span>
+            <p id="botonCeviche">HACE TU PEDIDO</p>
           </div>
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Geishas.jpg" alt=""></a>
-            <span>Geishas>></span>
+            <a href="#"><img src="images/photos/desk-Sashimi.png" alt=""></a>
+            <span>Sashimi>></span>
+            <p id="botonGeishas">HACE TU PEDIDO</p>
           </div>
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Maki.jpg" alt=""></a>
+            <a href="#"><img src="images/photos/desk-maki.png" alt=""></a>
             <span>Maki>></span>
+            <p id="botonMaki">HACE TU PEDIDO</p>
           </div>
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Rolls.jpg" alt=""></a>
+            <a href="#"><img src="images/photos/desk-Rolls.png" alt=""></a>
             <span>Rolls>></span>
+            <p id="botonRolls">HACE TU PEDIDO</p>
           </div>
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Sushi Salads.jpg" alt=""></a>
+            <a href="#"><img src="images/photos/desk-Sushi salad.png" alt=""></a>
             <span>Sushi Salads>></span>
+            <p id="botonSushi">HACE TU PEDIDO</p>
           </div>
           <div class="product swiper-slide">
-            <a href="#"><img src="images/photos/Product-Tablas.jpg" alt=""></a>
+            <a href="#"><img src="images/photos/desk-Tabla.png" alt=""></a>
             <span>Tablas>></span>
+            <p id="botonTablas">HACE TU PEDIDO</p>
           </div>
         </div>
       </div>
     </section>
     <section class="full-viewport franquicias" id="franquicias">
-      <h2 class="titulos.franquicias" data-aos="fade-bottom">FRANQUICIAS</h2>
-      <p class="texto.franquicias">
-        La pasión y la motivación que tenemos por la cocina y por lo que hacemos son las mismas que tenemos para seguir creciendo.<br><br>
-        Por eso brindamos el 100% de nuestro expertise en el rubro para expandir nuestra marca.<br><br>
-        A través de un equipo capacitado que ofrece supervisión y asesoramiento en todo momento.
-      </p>
-      <a href="#contact">Escribinos >></a>
+      <div class="franquicias-container">
+        <h2 class="titulos.franquicias" data-aos="fade-bottom">FRANQUICIAS</h2>
+        <p class="texto.franquicias">
+          La pasión y la motivación que tenemos por la cocina y por lo que hacemos son las mismas que tenemos para seguir creciendo.<br><br>
+          Por eso brindamos el 100% de nuestro expertise en el rubro para expandir nuestra marca.<br><br>
+          A través de un equipo capacitado que ofrece supervisión y asesoramiento en todo momento.
+        </p>
+        <a href="#contact">Escribinos >></a>
+      </div>
     </section>
     <section id="eventos" class="eventos visual-separador full-viewport">
-      <h2>eventos & <br>catering</h2>
-      <span>
-        Los platos y sabores que ya conocés, ahora en una propuesta de catering especialmente diseñada para un evento privado o corporativo.
-        Donde nos adaptamos a las diferentes necesidades, poniendo el foco en cada detalle, con el fin de que vivas una experiencia memorable.
-        Asegurándote la misma atención y servicio que nos caracteriza.
-      </span>
-      <a href="#contact">Escribinos >></a>
+      <div class="eventos-container">
+        <h2>eventos & <br>catering</h2>
+        <span>
+          Los platos y sabores que ya conocés, ahora en una propuesta de catering especialmente diseñada para un evento privado o corporativo.<br><br>
+          Donde nos adaptamos a las diferentes necesidades, poniendo el foco en cada detalle, con el fin de que vivas una experiencia memorable.<br><br>
+          Asegurándote la misma atención y servicio que nos caracteriza.
+        </span>
+        <a href="#contact">Escribinos >></a>
+      </div>      
     </section>
     <section class="full-viewport contact" id="contact">
       <h3 data-aos="fade-top">CONTACTO COMERCIAL</h3>
@@ -131,7 +140,7 @@
           <option value="franquicia">franquicias</option>
           <option value="eventos">eventos</option>
         </select>
-        <textarea name="text" rows="10" cols="20" onclick="text.value=''">MENSAJE</textarea>
+        <textarea name="text" onclick="text.value=''">MENSAJE</textarea>
         <button type="submit" value="Send">ENVIAR >>></button>
       </form>
     </Section>
@@ -141,6 +150,8 @@
         <div id="slider">
           <input type="radio" name="slider" id="slide1" checked>
           <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
           <div id="slides">
             <div id="overflow">
               <div class="inner">
@@ -148,14 +159,14 @@
                    <div class="slide-content">
                      <article>
                        <h3>villa urquiza</h3>
-                       <span>Delivery & take away - Angel Pacheco 2130 <br>
-                         Pedidos al tel 4522 7364
+                       <span>Delivery & take away<br>
+                         Angel Pacheco 2130 - CABA
                        </span>
                      </article>
                      <article>
                        <h3>caballito</h3>
-                       <span>Delivery & take away - Acoyte 200<br>
-                         Pedidos al tel 4522 7364
+                       <span>Delivery & take away<br>
+                         Acoyte 200 - CABA
                        </span>
                      </article>
                    </div>
@@ -164,17 +175,49 @@
                    <div class="slide-content">
                      <article>
                        <h3>palermo</h3>
-                       <span>Delivery & take away - El Salvador 4804<br>
-                         Pedidos al tel 4522 7364
+                       <span>Delivery & take away<br>
+                         El Salvador 4804 - CABA
                        </span>
                      </article>
                      <article>
                        <h3>ramos mejia</h3>
-                       <span>Delivery, take away & market - Av de Mayo 1513<br>
-                         Pedidos al tel 4522 7364
+                       <span>Delivery, take away & market<br>
+                         Av de Mayo 1513 - Ramos Mejía - Buenos Aires
                        </span>
                      </article>
                    </div>
+                </div>
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <article>
+                      <h3>villa urquiza</h3>
+                      <span>Delivery & take away<br>
+                        Angel Pacheco 2130 - CABA
+                      </span>
+                    </article>
+                    <article>
+                      <h3>caballito</h3>
+                      <span>Delivery & take away<br>
+                        Acoyte 200 - CABA
+                      </span>
+                    </article>
+                  </div>
+                </div>
+                <div class="slide slide_4">
+                  <div class="slide-content">
+                    <article>
+                      <h3>palermo</h3>
+                      <span>Delivery & take away<br>
+                        El Salvador 4804 - CABA
+                      </span>
+                    </article>
+                    <article>
+                      <h3>ramos mejia</h3>
+                      <span>Delivery, take away & market<br>
+                        Av de Mayo 1513 - Ramos Mejía - Buenos Aires
+                      </span>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,6 +225,8 @@
           <div id="controls">
              <label for="slide1"></label>
              <label for="slide2"></label>
+             <label for="slide3"></label>
+             <label for="slide4"></label>
           </div>
        </div>
       </div>
@@ -189,31 +234,35 @@
     <footer>
       <div class="footer-init">
         <article>
-          <h3>Delivey and Resto</h3>
+          <h3>Delivery & Resto</h3>
           <h4>0810 - 220 - 0255</h4>
         </article>
         <article>
           <h3>Recibir novedades</h3>
-          <form id="emailForm" class="vertical" action="newsletter.php" method="POST">
-            <input name="email" type="email" id="email" placeholder="EMAIL">
-            <button type="submit" value="Send">>>></button>
+          <form id="newsletter" class="vertical" action="newsletter.php" method="POST">
+            <div class="newsletter block">
+              <input name="email" type="email" id="email" placeholder="MAIL">
+              <button type="submit" value="Send">Enviar>></button>
+            </div>
           </form>
         </article>
       </div>
       <div class="footer-end">
         <hr>
-        <h6><br>KANU SUSHI · TEL: 0810-220-KANU (5268) · BUENOS AIRES - ARGENTINA · COPYRIGHT 2020 -ALL RIGHTS RESERVED</h6>
+        <h6><br>KANU SUSHI · BIG BRANDS GROUP · BUENOS AIRES - ARGENTINA · COPYRIGHT 2020 -ALL RIGHTS RESERVED</h6>
       </div>
     </footer>
   </div>
   <div class="mobile-only">
-    <nav role="navigation">
+    <nav role="navigation" class="nav">
+      <input type="checkbox" id="btn">
       <div id="menuToggle">
-        <input type="checkbox" />
         <span id="line1"></span>
         <span id="line2"></span>
         <span id="line3"></span>
-        <ul id="menu">
+      </div>
+      <div id="menu">
+        <ul>
           <li><a href="#product-container-mobile">Productos</a></li>
           <li><a href="#">Pedidos</a></li>
           <li><a href="#sucursales-container-mobile">Sucursales</a></li>
@@ -229,13 +278,15 @@
           <span>delivery &</span>
           <span>take away</span>
         </span>
+        <a href="#" class="kanu-cta cta-one">PEDIDO ONLINE</a>
       </div>
     </section>
     <section class="about-container-mobile full-viewport-mobile" id="about-us-mobile">
       <h3 class="titulo-about-us-mobile">ABOUT<br> US-</h3>
       <div class="subtitle-mobile">
-        <span class="less-mobile">LESS TALK</span>
-        <span class="more-mobile">- MORE EAT</span>
+        <span class="less-mobile">WHERE MODERN -</span>
+        <span class="more-mobile"><br>MEETS CLASSIC</span>
+
       </div>
       <div class="about-us-text-mobile">
         <p>Especializados desde hace 15 años en la fusión de sabores e ingredientes mezclando lo clásico con lo moderno para lograr una combinación de piezas únicas.</p>
@@ -262,7 +313,7 @@
           </div>
           <div class="product-mobile swiper-slide">
             <img src="images/products/sushi.png" alt="">
-            <span>SUSHI</span>
+            <span>SUSHI SALADS</span>
           </div>
           <div class="product-mobile swiper-slide">
             <img src="images/products/tablas.png" alt="">
@@ -270,7 +321,9 @@
           </div>
         </div>
       </div>
+      <div class="product-button">
         <a href="">Pedido Online</a>
+      </div>
     </section>
     <section id="sucursales-container-mobile" class="full-viewport-mobile">
       <div id="sucursales-mobile">
@@ -278,29 +331,29 @@
           <h2>sucursales-</h2>
           <article>
             <h3><br>villa urquiza</h3>
-            <span>Delivery & take away - Angel Pacheco 2130 <br>
-              Pedidos al tel 4522 7364 - Whatsapp 1128657626
+            <span>Delivery & take away<br>
+              Angel Pacheco 2130 - CABA
               <br>
             </span>
           </article>
           <article>
             <h3><br>caballito</h3>
-            <span>Delivery & take away - Acoyte 200 <br>
-              Pedidos al tel 4522 7364 - Whatsapp 1128657626
+            <span>Delivery & take away<br>
+              Acoyte 200 - CABA
               <br>
             </span>
           </article>
           <article>
             <h3><br>palermo</h3>
-            <span>Delivery & take away - El Salvador 4804 <br>
-              Pedidos al tel 4522 7364 - Whatsapp 1128657626
+            <span>Delivery & take away<br>
+              El salvador 4804 - CABA
               <br>
             </span>
           </article>
           <article>
             <h3><br>Ramos mejia</h3>
-            <span>Delivery, take away & market - Av de Mayo 1513 <br>
-              Pedidos al tel 4522 7364 - Whatsapp 1128657626
+            <span>Delivery, take away & market<br>
+              Av de Mayo 1513 - Ramos Mejía - Buenos Aires.
               <br>
             </span>
           </article>
@@ -315,7 +368,7 @@
         <span>-</span>
         <a href="https://www.instagram.com/kanusushi/?hl=es-la"><img src="images/icons/instagram.png" width="25px" alt=""></a>
       </div>
-      <h6>KANU SUSHI · TEL: 0810-220-KANU (5268) · BUENOS AIRES - ARGENTINA · COPYRIGHT 2016 -ALL RIGHTS RESERVED</h6>
+      <h6>KANU SUSHI · BIG BRANDS GROUP · BUENOS AIRES - ARGENTINA · COPYRIGHT 2020 -ALL RIGHTS RESERVED</h6>
     </section>
   </div>
 

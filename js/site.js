@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function setUpScroll() {
-    $('a[href*="#"]')
+    $('a[href="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -82,8 +82,6 @@ function setUpScroll() {
   });
 }
 
-$(".product img").hover(function(){
-  $(".product p").css("opacity", "1");
-  }, function(){
-  $(".product p").css("opacity", "0");
+$('#menu ul li a').on("click", function (e) {
+  $('#btn').click();
 });

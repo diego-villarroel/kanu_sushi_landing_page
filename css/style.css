@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Source Code;
+  src: url('../fonts/SourceCodeVariable-Roman.otf');
+}
+
 :root {
   --socialesBar: 90px;
 }
@@ -106,15 +111,15 @@ button {
 }
 
 #mainSlide-1 {
-  background-image: url(../images/main-slider/1.jpg);
+  background-image: url(../images/main-slider/Header-01.png);
 }
 
 #mainSlide-2 {
-  background-image: url(../images/main-slider/2.jpg);
+  background-image: url(../images/main-slider/Header-02.png);
 }
 
 #mainSlide-3 {
-  background-image: url(../images/main-slider/3.jpg);
+  background-image: url(../images/main-slider/Header-03.png);
 }
 
 /* Header box */
@@ -145,9 +150,9 @@ button {
 
 .slogan {
   color: #cdcece;
-  letter-spacing: 10pt;
+  letter-spacing: 10px;
   text-transform: uppercase;
-  font-size: 13pt;
+  font-size: 20px;
 }
 
 .slogan span {
@@ -173,7 +178,7 @@ button {
   display: flex;
   align-items: center;
   position: fixed;
-  right: 16px;
+  right: 0px;
   top: 0;
   width: var(--socialesBar);
   z-index: 50;
@@ -219,7 +224,7 @@ button {
   flex-direction: row;
   position: absolute;
   top: 30px;
-  right: 10vw;
+  right: 13vw;
 }
 
 .menu-container a {
@@ -232,7 +237,7 @@ button {
 }
 
 .menu-container a:hover {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.95);
 }
 
 /* Section: About us */
@@ -244,7 +249,7 @@ button {
 
 .titulo-about-us {
   position: relative;
-  left: 60vw;
+  left: 65vw;
   letter-spacing: 20px;
   font-style: italic;
   font-weight: 500;
@@ -256,11 +261,11 @@ button {
 
 .subtitle {
   color: #cdcece;
-  font-size: 17pt;
+  font-size: 15pt;
   font-weight: 600;
   position: absolute;
   text-align: center;
-  left: 23vw;
+  left: 7vw;
   top: 20vh;
   letter-spacing: 14pt;
 }
@@ -272,20 +277,11 @@ button {
 .about-us-text {
   color: #cdcece;
   font-size: 16pt;
-  font-weight: 350;
-  line-height: 20pt;
+  font-weight: 200;
+  line-height: 25pt;
   position: relative;
   top: 47vh;
-  right: 2vw;
-}
-
-/* 1er separador */
-
-#first-separator {
-  background: url(../images/photos/Destacado.jpg);
-  background-size: cover;
-  width: 100vw;
-  position: relative;
+  right: 18vw;
 }
 
 /* Section: Products */
@@ -308,6 +304,30 @@ button {
   background-color: #000000;
 }
 
+#products a:hover ~ #botonCeviche {
+  opacity: 1;
+}
+
+#products a:hover ~ #botonGeishas {
+  opacity: 1;
+}
+
+#products a:hover ~ #botonMaki {
+  opacity: 1;
+}
+
+#products a:hover ~ #botonRolls {
+  opacity: 1;
+}
+
+#products a:hover ~ #botonSushi {
+  opacity: 1;
+}
+
+#products a:hover ~ #botonTablas {
+  opacity: 1;
+}
+
 #product-slider.swiper-container {
   flex-direction: column;
   position: relative;
@@ -324,6 +344,7 @@ button {
   position: relative;
 }
 
+
 .product img {
   width: 50vw;
   height: 100vh;
@@ -335,35 +356,35 @@ button {
 }
 
 .product span {
-  font-family: "Source Sans Pro", monospace;
+  font-family: "Source Code Pro", monospace;
   color: #ffffff;
-  font-size: 18pt;
+  font-size: 25px;
   font-weight: 600;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  letter-spacing: 12pt;
+  letter-spacing: 11pt;
   text-transform: uppercase;
   position: absolute;
   margin-left: 15vw;
+  width: 35vw;
 }
 
 .product p {
-  font-family: "Source Sans Pro", monospace;
+  font-family: "Source Code Pro", monospace;
   color: #ffffff;
-  font-size: 10pt;
+  font-size: 15px;
   font-weight: 600;
-  width: 15vw;
+  width: 35vw;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
-  letter-spacing: 2pt;
+  letter-spacing: 7pt;
   position: absolute;
-  margin-top: 11vh;
+  margin-top: 20vh;
   margin-left: 15vw;
   opacity: 0;
   transition: .2s;
-  z-index: 100;
 }
 
 #kanu-font {
-  font-family: "Source Sans Pro", monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: 12pt;
   font-weight: 100;
 }
@@ -384,25 +405,36 @@ button {
   height: 101vh;
 }
 
+.franquicias-container {
+  position: relative;
+  display: block;
+  width: 90vw;
+  height: 90vh;
+  margin: auto auto;
+}
+
 .franquicias h2 {
   color: #535456;
   font-style: italic;
-  font-size: 35pt;
+  font-size: 40px;
   letter-spacing: 15pt;
-  position: absolute;
-  top: 32vh;
-  left: 35vw;
+  position: relative;
+  display: block;
+  top: 10vh;
+  left: 23vw;
 }
 
 .franquicias p {
   color: #535456;
-  font-size: 15pt;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 15pt;
-  width: 32vw;
-  position: absolute;
-  top: 42vh;
-  left: 35vw;
+  line-height: 22pt;
+  width: 50vw;
+  position: relative;
+  display: block;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  left: 23vw;
 }
 
 .franquicias a {
@@ -411,37 +443,54 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 5pt;
-  position: absolute;
-  bottom: 20vh;
-  left: 35vw;
+  position: relative;
+  display: block;
+  left: 23vw;
+  transition: all 0.5s;
+}
+
+.franquicias a:hover {
+  transform: translateX(5px);
 }
 
 /* Section: Eventos */
 #eventos {
   background: url(../images/photos/Eventos.jpg);
-  position: relative;
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  position: relative;
+  z-index: 0;
+}
+
+.eventos-container {
+  position: relative;
+  display: block;
+  width: 90vw;
+  height: 90vh;
+  margin: auto auto;
 }
 
 .eventos h2 {
   color: #cdcece;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 35pt;
+  font-size: 45px;
   letter-spacing: 15pt;
-  position: absolute;
-  top: 30vh;
+  position: relative;
+  display: block;
+  top: 3vh;
   left: 10vw;
 }
 
 .eventos span {
   color: #fefefe;
-  font-size: 13pt;
-  width: 30vw;
-  line-height: 25pt;
-  position: absolute;
-  top: 48vh;
+  font-size: 20px;
+  width: 60vw;
+  line-height: 22pt;
+  position: relative;
+  display: block;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
   left: 10vw;
 }
 
@@ -452,8 +501,13 @@ button {
   text-transform: uppercase;
   letter-spacing: 5pt;
   position: absolute;
-  bottom: 23vh;
+  display: block;
   left: 10vw;
+  transition: all 0.5s;
+}
+
+.eventos a:hover {
+  transform: translateX(5px);
 }
 
 /*Section: Contact */
@@ -464,22 +518,25 @@ button {
   background-image: url('../images/lines-k.png');
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: 40%;
   z-index: 0;
+  height: 85vh;
 }
 
 .contact h3 {
+  font-size: 25px;
   font-weight: 400;
-  letter-spacing: 16pt;
+  letter-spacing: 11pt;
   position: absolute;
-  top: 100px;
-  left: 500px;
+  top: 5vh;
+  left: 24vw;
 }
 
 .contact form {
   position: absolute;
-  top: 150px;
-  left: 498px;
-  width: 36vw;
+  margin-top: 15vh;
+  margin-left: 24vw;
+  width: 51vw;
 }
 
 #emailForm input,
@@ -491,6 +548,7 @@ button {
 
 #emailForm select option {
   color: #003b4a;
+  background: transparent;
 }
 
 #emailForm input,
@@ -511,6 +569,11 @@ button {
   letter-spacing: 4px;
 }
 
+#emailForm textarea {
+  height: 12vh;
+  resize: none;
+}
+
 #emailForm button {
   align-self: flex-end;
   background: none;
@@ -524,6 +587,8 @@ button {
   outline: 0;
   transition: all 0.5s;
   width: auto;
+  margin-top: 1vh;
+  justify-content: center;
 }
 
 #emailForm button:hover {
@@ -538,6 +603,7 @@ button {
   color: #7c7c7c;
   display: flex;
   flex-direction: column;
+  height: 80vh;
 }
 
 #sucursales-container h2 {
@@ -545,13 +611,13 @@ button {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 10px;
-  margin-top: 20vh;
+  margin-top: 7vh;
 }
 
 #sucursales h3 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 15pt;
+  letter-spacing: 10pt;
   margin-bottom: 10px;
 }
 
@@ -573,7 +639,7 @@ button {
 /*SLIDER EN CSS*/
 #slider {
    margin: 0 auto;
-   width: 800px;
+   width: 700px;
    max-width: 100%;
 }
 #slider input[type=radio] {
@@ -598,10 +664,17 @@ button {
 #slide2:checked ~ #slides .inner {
    margin-left: -100%;
 }
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
 #slides .inner {
    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
    width: 400%;
-   height: 300px;
+   line-height: 0;
+   height: 250px;
 }
 #slides .slide {
    width: 25%;
@@ -614,7 +687,6 @@ button {
 #controls {
    margin: -180px 0 0 0;
    width: 100%;
-   height: 50px;
    z-index: 3;
    position: relative;
 }
@@ -623,21 +695,29 @@ button {
    display: none;
    width: 50px;
    height: 50px;
-   opacity: .4;
+   opacity: .6;
 }
 #controls label:hover {
    opacity: 1;
 }
 #slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(2) {
-   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+   background: url(../images/icons/der.png) no-repeat;
+   background-size: contain;
+   height: 25vh;
    float:right;
    margin: 0 -50px 0 0;
    display: block;
 }
-#slide1:checked ~ #controls label:nth-last-child(2),
-#slide2:checked ~ #controls label:nth-last-child(2) {
-   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
+   background: url(../images/icons/izq.png) no-repeat;
+   background-size: contain;
+   height: 25vh;
    float:left;
    margin: 0 0 0 -50px;
    display: block;
@@ -654,7 +734,7 @@ footer {
   display: flex;
   float: left;
   flex-direction: column;
-  height: 30vh;
+  height: 35vh;
   justify-content: center;
   position: relative;
   width: 100vw;
@@ -664,7 +744,8 @@ footer {
   align-items: stretch;
   display: flex;
   flex-direction: row;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
+  margin-left: 10vw;
 }
 
 .footer-init h3 {
@@ -672,6 +753,7 @@ footer {
   padding-right: 9vw;
   padding-bottom: 1vh;
   font-size: 14pt;
+  font-weight: 500;
   letter-spacing: 3pt;
   color: #2c7081;
 }
@@ -679,6 +761,51 @@ footer {
 .footer-init h4 {
   font-size: 14pt;
   letter-spacing: 3pt;
+}
+
+.newsletter {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.newsletter input {
+  color: #FFF;
+  background: transparent;
+  border: white thin solid;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  padding: 10px;
+  letter-spacing: 4px;
+  width: 40vw;
+  height: 3vh;
+}
+
+.newsletter button {
+    align-self: flex-end;
+    background: none;
+    border: 0;
+    color: #2c7081;
+    cursor: pointer;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    outline: 0;
+    transition: all 0.5s;
+    width: auto;
+    margin-bottom: 7px;
+    margin-left: 1vw;
+    transition: 0.5s;
+}
+
+.newsletter button:hover {
+  transform: translateX(5px);
+}
+
+.newsletter img {
+  position: relative;
+  width: 1vw;
 }
 
 .footer-end {
@@ -694,208 +821,333 @@ footer {
 }
 
 footer h6 {
-  font-size: 12px;
+  font-size: 12pt;
   font-weight: 400;
-  padding-top: 6px;
   text-align: center;
 }
 
-@media (max-width: 1500px) {
-  /* Section: Franquicias */
-  .franquicias h2 {
-    top: 30vh;
-    left: 33vw;
+@media screen and (max-width: 1921px) and (min-height: 1079px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
   }
-
-  .franquicias p {
-    width: 35vw;
-    top: 40vh;
-    left: 33vw;
+  .about-us-text {
+    right: 10vw;
   }
-
-  .franquicias a {
-    bottom: 33vh;
-    left: 33vw;
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
   }
-
-  /* Section: Eventos */
-  .eventos a {
-    bottom: 18vh;
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
   }
-
-  /*Section: Contact */
-  .contact h3 {
-    top: 13vh;
-    left: 30.5vw;
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
   }
-
-  .contact form {
-    top: 23vh;
-    left: 32vw;
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
   }
 }
 
-@media (max-width: 1300px) {
-  /* Section: About us */
-  .titulo-about-us {
-    left: 60vw;
-  }
-
+@media screen and (max-width: 1681px) and (min-height: 1049px){
+  /*ABOUT U*/
   .subtitle {
-    left: 17vw;
+    left: 15vw;
   }
-
   .about-us-text {
-    right: 7vw;
+    right: 10vw;
   }
-
-  /* Section: Franquicias */
-  .franquicias h2 {
-    top: 28vh;
-    left: 28vw;
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
   }
-
-  .franquicias p {
-    width: 40vw;
-    top: 37vh;
-    left: 28vw;
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
   }
-
-  .franquicias a {
-    bottom: 35vh;
-    left: 28vw;
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
   }
-
-  /* Section: Eventos */
-  .eventos span {
-    top: 45vh;
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
   }
-
-  .eventos a {
-    bottom: 23vh;
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
   }
-
-  /*Section: Contact */
-  .contact h3 {
-    top: 13vh;
-    left: 28vw;
-  }
-
-  .contact form {
-    top: 23vh;
-    left: 32vw;
+  /*FOOTER*/
+  footer {
+    height: 24vh;
   }
 }
 
-@media (max-width: 1100px) {
-  /* Menu */
-  .menu-container {
-    right: 14vw;
-  }
-
-  .menu-container a {
-    font-size: 11px;
-    letter-spacing: 3px;
-    margin-left: 2vw;
-  }
-
-  /* Section: About us */
-  .titulo-about-us {
-    left: 60vw;
-    font-weight: 500;
-    font-size: 35pt;
-    margin-top: 45vh;
-  }
-
+@media screen and (max-width: 1601px) and (min-height: 1199px){
+  /*ABOUT U*/
   .subtitle {
-    position: absolute;
-    left: 20vw;
-    font-size: 12pt;
-    font-weight: 600;
-    top: 25vh;
-    letter-spacing: 10pt;
+    left: 15vw;
   }
-
   .about-us-text {
-    font-size: 13pt;
-    font-weight: 350;
-    line-height: 20pt;
-    top: 47vh;
-    right: 18vw;
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1601px) and (min-height: 899px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
+  }
+  .about-us-text {
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-height: 899px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
+  }
+  .about-us-text {
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1360px) and (min-height: 768px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
+  }
+  .about-us-text {
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1281px) and (min-height: 1024px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
+  }
+  .about-us-text {
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1281px) and (min-height: 719px){
+  /*ABOUT U*/
+  .subtitle {
+    left: 15vw;
+  }
+  .about-us-text {
+    right: 10vw;
+  }
+  /*FRANQUICIAS*/
+  .franquicias-container {
+    height: 70vh;
+  }
+  /*EVENTOS*/
+  .eventos-container {
+    height: 65vh;
+  }
+  /*CONTACTO*/
+  .contact {
+    background-size: 60%;
+  }
+  #emailForm textarea {
+    height: 20vh;
+    resize: none;
+  }
+  /*SUCURSALES*/
+  #sucursales-container h2 {
+    margin-top: 18vh;
+  }
+  /*FOOTER*/
+  footer {
+    height: 24vh;
+  }
+}
+
+@media screen and (max-width: 1153px) and (min-height: 863px){
+  .franquicias-container {
+    height: 65vh;
   }
 
-  /* Section: Franquicias */
-  .franquicias h2 {
-    font-size: 33pt;
-    letter-spacing: 12pt;
-    top: 25vh;
-    left: 28vw;
+  .eventos-container {
+    height: 65vh;
   }
 
-  .franquicias p {
-    font-size: 14pt;
-    font-weight: 400;
-    line-height: 15pt;
-    letter-spacing: 1pt;
-    width: 47vw;
-    top: 35vh;
-    left: 28vw;
+  .contact {
+    background-size: 60%;
   }
 
-  .franquicias a {
-    bottom: 22vh;
-    left: 28vw;
+  #emailForm textarea {
+    height: 24vh;
+    resize: none;
   }
 
-  /* Section: Eventos */
-  .eventos h2 {
-    font-size: 32pt;
-    top: 12vh;
-    left: 10vw;
+  #sucursales-container h2 {
+    margin-top: 17vh;
   }
 
-  .eventos span {
-    font-size: 13pt;
-    width: 45vw;
-    line-height: 18pt;
-    letter-spacing: 1pt;
-    top: 36vh;
+  footer {
+    height: 22vh;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-height: 767px){
+  .franquicias-container {
+    height: 75vh;
   }
 
-  .eventos a {
-    bottom: 20vh;
+  .eventos-container {
+    height: 70vh;
   }
 
-  /*Section: Contact */
   .contact {
     background-size: 50%;
   }
 
-  .contact h3 {
-    font-weight: 400;
-    letter-spacing: 10pt;
-    top: 4vh;
-    left: 27vw;
+  #emailForm textarea {
+    height: 22vh;
+    resize: none;
   }
-
-  .contact form {
-    top: 12vh;
-    width: 70vw;
-    left: 13vw;
-    height: 65vh;
-  }
-
-  /*Section: Sucursales*/
 
   #sucursales-container h2 {
-    font-size: 40pt;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
 
   footer {
-    height: 40vh;
+    height: 25vh;
   }
 }

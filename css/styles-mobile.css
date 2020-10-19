@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Source Code";
+  src: url("/fonts/SourceCodeVariable-Roman.otf") format("opentype");
+}
+
 @media (max-width: 915px) {
   .mobile-hide {
     display: none;
@@ -13,7 +18,6 @@
     height: 100vh;
     width: 100vw;
     overflow-x:hidden;
-    position: relative;
   }
 
   .full-viewport-mobile:focus {
@@ -71,6 +75,31 @@
     font-weight: 900;
   }
 
+  .kanu-cta {
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .kanu-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+  }
+
+  .cta-one:hover {
+    color: #ffffff;
+    background: #003b4a;
+  }
+
+  .logo-block-mobile a {
+    color: #cdcece;
+    border: 1px #cdcece solid;
+    display: block;
+    height: 50px;
+    line-height: 45px;
+    width: 40vw;
+    text-align: center;
+  }
+
   /* Menu */
   #menuToggle {
     display: flex;
@@ -80,17 +109,19 @@
     right: 25px;
     -webkit-user-select: none;
     user-select: none;
-    z-index: 3;
+    z-index: 9;
   }
 
-  #menuToggle input {
+  #btn {
+    top: 20px;
+    right: 20px;
     display: flex;
     width: 40px;
     height: 32px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 10;
   }
 
   #menuToggle span {
@@ -126,19 +157,23 @@
     transform-origin: 0% 100%;
   }
 
-  #menuToggle input:checked ~ span {
+  #btn:checked ~ #menuToggle span {
     background: #666;
     opacity: 1;
-    transform: rotate(45deg) translate(-3px, -1px);
+    transform: rotate(45deg) translate(-9px, -9px);
     width: 31px;
   }
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  #btn:checked ~ #menuToggle span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
+  #btn:checked ~ #menuToggle span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-9px, 9px);
+  }
+
+  #btn:checked ~ #menu {
+    transform: translate(0, 0);
   }
 
   #menu {
@@ -157,25 +192,23 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     width: 100vw;
     -webkit-font-smoothing: antialiased;
+    z-index: 5;
   }
 
   #menu li {
     padding: 35px 0px;
     transition-delay: 2s;
+    list-style: none;
   }
 
   #menu li a {
     color: #FFF;
-    font-family: "Source Sans Pro", monospace;
+    font-family: "Source Code Pro", monospace;
     font-size: 28px;
     font-weight: 300;
     padding-top: 55px;
     text-transform: uppercase;
     letter-spacing: 6px;
-  }
-
-  #menuToggle input:checked ~ ul {
-    transform: translate(0, 0);
   }
 
   /* Section: About us */
@@ -212,6 +245,11 @@
 
   .more-mobile {
     font-weight: 400;
+    letter-spacing: 10px;
+  }
+
+  .less-mobile {
+    letter-spacing: 10px;
   }
 
   .about-us-text-mobile {
@@ -231,19 +269,16 @@
   #product-container-mobile {
     position: relative;
     width: 100vw;
+    height: 90vh;
   }
 
   #product-container-mobile a {
     background: #003b4A;
-    bottom: 7vh;
     color: #FFF;
-    font-family: "Source Sans Pro", monospace;
+    font-family: "Source Code Pro", monospace;
     font-size: 11pt;
     text-transform: uppercase;
-    left: 58%;
     padding: 10px 22px;
-    position: absolute;
-    transform: translateX(-100px);
   }
 
   #product-slider-mobile.swiper-container {
@@ -262,21 +297,24 @@
   }
 
   .product-mobile img {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
   }
 
   .product-mobile span {
     bottom: 15vh;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.88);
     letter-spacing: 8pt;
     color: #ffffff;
     position: absolute;
     text-align: center;
-    margin-left: 1vw;
     width: 100%;
+  }
+  .product-button {
+    position: relative;
+    margin: 80vh auto 0 auto;
   }
 
   /* Sucursales */
@@ -288,7 +326,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 103vh;
+    height: 82vh;
     z-index: 0;
   }
 
@@ -298,7 +336,7 @@
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   #sucursales-mobile {
@@ -358,5 +396,39 @@
     font-size: 9px;
     font-weight: 500;
     text-align: center;
+  }
+}
+
+@media (max-height: 820px) {
+  /* Section: About us */
+  .about-container-mobile h3 {
+    top: 200px;
+    left: 50px;
+  }
+
+  .subtitle-mobile {
+    top: 100px;
+    left: 50px;
+  }
+
+  .about-us-text-mobile {
+    left: 50px;
+  }
+}
+
+@media (max-height: 650px) {
+  /* Section: About us */
+  .about-container-mobile h3 {
+    top: 150px;
+    left: 50px;
+  }
+
+  .subtitle-mobile {
+    top: 60px;
+    left: 50px;
+  }
+
+  .about-us-text-mobile {
+    left: 50px;
   }
 }
