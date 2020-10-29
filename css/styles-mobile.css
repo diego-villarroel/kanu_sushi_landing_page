@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Source Code";
-  src: url("/fonts/SourceCodeVariable-Roman.otf") format("opentype");
-}
-
 @media (max-width: 915px) {
   .mobile-hide {
     display: none;
@@ -57,7 +52,7 @@
 
   .linea-mobile {
     border-left: 2px #cdcece solid;
-    height: 30vh;
+    height: 35vh;
   }
 
   .slogan-mobile {
@@ -270,6 +265,7 @@
     position: relative;
     width: 100vw;
     height: 90vh;
+    overflow: hidden;
   }
 
   #product-container-mobile a {
@@ -289,20 +285,17 @@
   #product-container-mobile .swiper-wrapper {
     position: absolute;
     display: inline-flex;
-    width: 100vw;
   }
 
   .product-mobile {
-    display: inline-flex;
   }
 
   .product-mobile img {
-    height: 90vh;
-    width: 100vw;
+    height: 100vh;
   }
 
   .product-mobile span {
-    bottom: 15vh;
+    bottom: 23vh;
     font-size: 25px;
     font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.88);
@@ -310,7 +303,8 @@
     color: #ffffff;
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 100vw;
+    margin-left: 1vw;
   }
   .product-button {
     position: relative;
@@ -319,13 +313,11 @@
 
   /* Sucursales */
   #sucursales-container-mobile {
-    align-items: center;
+    padding-top: 10vh;
     position: relative;
     background: #1a1a1a;
     color: #cdcece;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: block;
     height: 82vh;
     z-index: 0;
   }
@@ -334,22 +326,20 @@
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
+    display: block;
     letter-spacing: 10px;
+    text-align: center;
     margin-bottom: 30px;
     margin-top: 40px;
   }
 
-  #sucursales-mobile {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .vertical-mobile article {
+  #sucursales-mobile article {
     margin-bottom: 20px;
+    width: 60vw;
+    margin-left: 30vw;
   }
 
-  .vertical-mobile article h3 {
+  #sucursales-mobile article h3 {
     color: #cdcece;
     font-weight: 300;
     text-transform: uppercase;
@@ -357,10 +347,33 @@
     margin-bottom: 5px;
     font-size: 14px;
   }
-  .vertical-mobile article span {
+
+  #sucursales-mobile article span {
     color: #cdcece;
     font-weight: 250;
     font-size: 12px;
+  }
+
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display:block;
+  }
+  .carousel{
+    margin-top: 50px;
+  }
+  .carousel-inner{
+    height: 215px;
+  }
+  .carousel-control-prev img {
+     height: 50%;
+  }
+  .carousel-control-next img {
+    height: 50%;
+  }
+  #izq,
+  #der {
+    margin: 0 2vw;
   }
 
   /*---footer---*/
@@ -371,11 +384,38 @@
     display: flex;
     float: left;
     flex-direction: column;
-    height: 18vh;
+    height: 35vh;
     justify-content: center;
     position: relative;
     width: 100vw;
-    z-index: -1;
+    z-index: 0;
+  }
+
+  .footer-socials-mobile  {
+  }
+
+  .footer-socials-mobile img {
+    margin: 2vh 5vw;
+  }
+
+  .footer h3 {
+    color: #2c7081;
+    letter-spacing: 2pt;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .footer h4 {
+    letter-spacing: 5pt;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .footer hr {
+    width: 100vw;
+    border: .5px solid;
+    border-color: #025469;
+    position: static;
   }
 
   .footer-socials-mobile {
@@ -386,11 +426,6 @@
     margin-bottom: 5px;
   }
 
-  .footer-socials-mobile span {
-    font-size: 55px;
-    margin: 0 20px;
-  }
-
   .footer h6 {
     width: 60vw;
     font-size: 9px;
@@ -399,24 +434,7 @@
   }
 }
 
-@media (max-height: 820px) {
-  /* Section: About us */
-  .about-container-mobile h3 {
-    top: 200px;
-    left: 50px;
-  }
-
-  .subtitle-mobile {
-    top: 100px;
-    left: 50px;
-  }
-
-  .about-us-text-mobile {
-    left: 50px;
-  }
-}
-
-@media (max-height: 650px) {
+@media (min-height: 650px) {
   /* Section: About us */
   .about-container-mobile h3 {
     top: 150px;
@@ -430,5 +448,33 @@
 
   .about-us-text-mobile {
     left: 50px;
+  }
+}
+
+@media (min-height: 799px) {
+    .footer {
+        height: 30vh;
+      }
+  /* Section: About us */
+  .about-container-mobile h3 {
+    top: 220px;
+    left: 50px;
+  }
+  .subtitle-mobile {
+    top: 100px;
+    left: 50px;
+  }
+  .about-us-text-mobile {
+    left: 50px;
+    margin-top: 250px;
+  }
+  #sucursales-container-mobile {
+    padding-top: 18vh;
+  }
+}
+
+@media (min-width: 760px) {
+  #sucursales-mobile article {
+    margin-left: 40vw;
   }
 }
