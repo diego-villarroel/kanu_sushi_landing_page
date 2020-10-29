@@ -456,10 +456,6 @@ button {
   background: #003b4a;
   color: #cdcece;
   position: relative;
-  background-image: url('../images/lines-k.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 50%;
   z-index: 0;
   height: 100vh;
 }
@@ -495,9 +491,10 @@ button {
   background: transparent;
   border: white thin solid;
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
   margin-bottom: 10px;
   outline: 0;
-  padding: 10px;
+  padding: 10px 20px;
 }
 #emailForm input::placeholder,
 #emailForm select,
@@ -517,7 +514,7 @@ button {
   cursor: pointer;
   display: flex;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   letter-spacing: 4px;
   outline: 0;
   transition: all 0.5s;
@@ -544,16 +541,17 @@ button {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 10px;
-  margin-top: 12vh;
+  margin-top: 13vh;
 }
 #sucursales h3 {
+  font-size: 1.3em;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 10pt;
   margin-bottom: 10px;
 }
 #sucursales article {
-  margin: 5vh 0 0 33vw;
+  margin: 5vh 0 9vh 33vw;
   width: 50vw;
 }
 #sucursales span {
@@ -569,10 +567,10 @@ button {
   display:block;
 }
 .carousel{
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .carousel-inner{
-  height: 300px;
+  height: 320px;
 }
 .carousel-control-prev {
   margin-left: 13vw;
@@ -600,7 +598,7 @@ footer {
   flex-direction: row;
   margin-top: 8vh;
   margin-bottom: 3vh;
-  margin-left: 10vw;
+  margin-left: 7vw;
 }
 .footer-init h3 {
   text-transform: uppercase;
@@ -613,7 +611,7 @@ footer {
 }
 .footer-init h4 {
   font-size: 14pt;
-  letter-spacing: 3pt;
+  letter-spacing: 6pt;
 }
 .newsletter {
   display: inline-flex;
